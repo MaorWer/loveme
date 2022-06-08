@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loveme</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <header>
+    <h1>Love me</h1>
+    <p>
+      Welcome to the largest dating site in the world! Registration is free, we
+      will be happy for you to answer some questions so we can coordinate the
+      most suitable partner for you.
+    </p>
+  </header>
+    <form action="https://formspree.io/f/mbjwwlyz" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        Name:
+        <input
+          type="text"
+          name="name"
+          placeholder="Name + last name"
+          required
+        />
+        Email:
+        <input
+          type="email"
+          name="email"
+          placeholder="12345@gmail.com"
+          required
+        />
+        <br /><br />
+        gender:<input
+          type="radio"
+          value="male"
+          name="gender"
+          id="male"
+          checked
+        />
+        <label for="male">Male</label>
+        <input type="radio" value="female" name="gender" id="female" />
+        <label for="female">Female</label>
+        <br /><br />
+        Country:
+        <select name="country">
+          <option value="israel">Israel</option>
+          <option value="india">India</option>
+          <option value="england">England</option>
+        </select>
+        <br /><br />
+
+        <label for="dob">Date of birth:</label>
+        <input
+          id="dob"
+          type="date"
+          name="date of birth"
+          required
+          min="2003-05-29"
+          max="2022-05-29"
+        />
+
+        <br /><br />
+        <textarea
+          name="about me"
+          cols="50"
+          rows="20"
+          placeholder="about me"
+          minlength="2"
+          maxlength="300"
+        ></textarea>
+        <br /><br />
+        I confirm that I am over 18 years old<input type="checkbox" required />
+        <br /><br />
+      </fieldset>
+      <fieldset id="a">
+        <legend>Occupation and hobbies (optional)</legend>
+        Smoker?<input type="radio" value="yes" name="smoker" id="yes" />
+        <label for="yes">Yes</label>
+        <input type="radio" value="no" name="smoker" id="no" checked />
+        <label for="no">No</label>
+        <br />
+        <h2>Hobbies</h2>
+        Sport<input type="checkbox" /> Dancing<input type="checkbox" />
+        Cooking<input type="checkbox" /> Playing<input type="checkbox" />
+        Camping<input type="checkbox" /> <br /><br />
+        <textarea
+          name="hobbies"
+          cols="50"
+          rows="20"
+          placeholder="Detail about your hobbies"
+          maxlength="200"
+        ></textarea>
+        <br /><br />
+        Height:<input type="text" name="height" placeholder="height" />
+        Weight:<input type="text" name="weight" placeholder="weight" />
+        <br /><br />
+        Family Status:
+        <select name="family Status">
+          <option value="single">single</option>
+          <option value="divorcee">Divorcee</option>
+          <option value="widower">Widower</option>
+        </select>
+      </fieldset>
+
+      <br />
+      <p>
+        We're glad you chose Love me, we will do our best to find the most
+        suitable partner for you! Click Register to complete the process
+      </p>
+      <br /><br />
+      <button id="b">Sign up!</button>
+    </form>
+  </body>
+</html>
